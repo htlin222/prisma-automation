@@ -1,0 +1,7 @@
+entry_id,label,reason
+scopus_10.1080_25310429.2025.2457856,1,Relevant clinical trial data
+scopus_10.1080_25310429.2024.2411803,0,Correspondence article not relevant
+scopus_10.1080_25310429.2024.2420562,1,Systematic review and meta-analysis
+pubmed_32186275,0,Animal study not meeting inclusion criteria
+pubmed_33456789,1,Randomized controlled trial with relevant outcomes
+pubmed_34567890,1,Clinical trial with target population

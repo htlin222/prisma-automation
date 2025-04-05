@@ -1,0 +1,109 @@
+{
+  "project": {
+    "title": "PRISMA Systematic Review",
+    "description": "Description of your systematic review",
+    "authors": ["Author 1", "Author 2"],
+    "date_created": "2025-04-05",
+    "last_updated": "2025-04-05"
+  },
+  "search_strategy": {
+    "search_term_files": {
+      "pubmed": "search_terms/pubmed_search_term.txt",
+      "scopus": "search_terms/scopus_search_term.txt",
+      "embase": "search_terms/embase_search_term.txt"
+    },
+    "databases": ["pubmed", "scopus", "embase"],
+    "years": [2010, 2023],
+    "languages": ["english"],
+    "article_types": ["journal article", "review"],
+    "boolean_operators": {
+      "within_category": "OR",
+      "between_categories": "AND"
+    },
+    "advanced_query": ""
+  },
+  "database_defaults": {
+    "enabled": true,
+    "fields": ["title", "abstract", "keywords"],
+    "date_range": {
+      "start": "2020-01-01",
+      "end": "2025-04-05"
+    },
+    "languages": ["English"],
+    "max_results": 100
+  },
+  "databases": {
+    "pubmed": {
+      "article_types": ["journal article", "review", "clinical trial"],
+      "species": ["humans"],
+      "batch_size": 100
+    },
+    "cochrane": {
+      "max_results": 500
+    },
+    "scopus": {
+      "subject_areas": ["medicine", "health sciences"],
+      "document_types": ["article", "review"]
+    },
+    "embase": {
+      "evidence_types": ["randomized controlled trial", "systematic review"]
+    }
+  },
+  "screening": {
+    "title_abstract": {
+      "inclusion_criteria": [
+        "clinical trial",
+        "randomized controlled trial",
+        "systematic review"
+      ],
+      "exclusion_criteria": [
+        "animal study",
+        "case report",
+        "letter to editor"
+      ]
+    },
+    "full_text": {
+      "inclusion_criteria": [
+        "primary outcome reported",
+        "appropriate statistical analysis",
+        "sample size calculation provided"
+      ],
+      "exclusion_criteria": [
+        "non-peer reviewed",
+        "conference abstract only",
+        "insufficient methodological detail"
+      ]
+    }
+  },
+  "data_extraction": {
+    "study_characteristics": [
+      "author",
+      "year",
+      "country",
+      "study_design",
+      "sample_size",
+      "population_characteristics"
+    ],
+    "intervention_details": [
+      "intervention_type",
+      "intervention_duration",
+      "intervention_frequency",
+      "control_group"
+    ],
+    "outcome_measures": [
+      "primary_outcome",
+      "secondary_outcomes",
+      "outcome_measurement_tools",
+      "follow_up_period"
+    ]
+  },
+  "output": {
+    "directory": "output",
+    "deduplicated_file": "deduplicated.bib",
+    "duplicates_report": "duplicates_report.csv",
+    "screening_directory": "screening",
+    "format": "bib",
+    "deduplication": true,
+    "export_path": "output/search_results.bib"
+  }
+}

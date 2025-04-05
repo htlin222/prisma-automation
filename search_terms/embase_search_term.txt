@@ -1,0 +1,1 @@
+('lung cancer'/exp OR 'lung cancer' OR 'lung neoplasms' OR 'NSCLC' OR 'non-small cell lung cancer') AND ('randomized controlled trial'/de OR 'systematic review'/de)

@@ -1,0 +1,1 @@
+(("lung cancer"[Title/Abstract] OR "lung neoplasms"[MeSH Terms] OR "NSCLC"[Title/Abstract] OR "non-small cell lung cancer"[Title/Abstract]) AND ("randomized controlled trial"[Publication Type] OR "systematic review"[Publication Type]))
