@@ -64,3 +64,4 @@ Thumbs.db
 output/*.pdf
 output/*.png
 output/*.jpg
+output/
