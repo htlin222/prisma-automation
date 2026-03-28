@@ -1,3 +1,7 @@
+![GitHub stars](https://img.shields.io/github/stars/htlin222/prisma-automation?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/htlin222/prisma-automation?style=flat-square)
+![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+
 # PRISMA Workflow Automation
 
 This project automates the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) workflow using Python and R.
